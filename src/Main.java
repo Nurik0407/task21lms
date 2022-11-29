@@ -7,7 +7,7 @@ public class Main {
 
         try (FileWriter fileWriter = new FileWriter("symbols.txt");) {
             for (char i = 'a', j = 'A'; i <= 'z'; i++, j++) {
-                fileWriter.write(j + "" + i + "\n");
+                fileWriter.write(j + " " + i + "\n");
             }
             for (int i = 0; i < 10; i++) {
                 fileWriter.write(i + "\n");
